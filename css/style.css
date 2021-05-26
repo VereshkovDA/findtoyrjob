@@ -1,8 +1,17 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
     color: #111238;
     margin: 0;
+}
+
+.header {
+    background: #F2F3F6;
+    
 }
 
 .menu {
@@ -23,6 +32,8 @@ body {
 .btn {
     text-decoration: none;
     display: inline-block;
+    border: none;
+    font-size: 16px;
 }
 
 .btn-link {
@@ -34,6 +45,15 @@ body {
     padding-bottom: 10px;
 }
 
+.btn-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.button-text {
+    vertical-align: middle; 
+}
+
 .btn-primary {
     background: #1A75E8;
     color: white;
@@ -42,4 +62,105 @@ body {
     padding-left: 30px;
     padding-bottom: 15px;
     padding-right: 30px;
+}
+
+.hero-title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    margin-top: 43px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+
+}
+
+.imput-group {
+    background: #FFFFFF;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: 5px;
+    padding:10px ;
+    margin-bottom: 25px;
+}
+
+.input {
+    background: #FFFFFF;
+    border: none;
+    flex-grow: 1;
+    font-size:16px ;
+    line-height: 19px;
+    padding-left: 15px;
+}
+
+.input:focus {
+    outline: 1px dotted #666;
+}
+
+.tags-group {
+    padding-left: 15px;
+    color: #B2B2B2;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.tag {
+    color: #B2B2B2;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #B2B2B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+}
+
+.section-title {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.card {
+    width: 196px;
+    text-decoration: none;
+    fill: #111238;
+    background: #F2F3F6;
+    border-radius: 10px;
+    padding: 35px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.card:hover {
+    background: #1A75E8;
+    color: white;
+}
+
+.card:hover .card-icon{
+    fill: #fff;
+
+}
+
+.card-icon {
+    fill: #111238;
+    margin-bottom: 15px;
+    transition: fill 0.2s;
+}
+
+.card-text {
+    color:  #111238;
+}
+
+.card:hover .card-text {
+    color: #FFF;
+    transition: fill 0.2s;  
 }
